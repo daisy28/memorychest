@@ -74,7 +74,7 @@ const Popular = () => {
             width={20}
             height={20}
             alt="random picture"
-            className={`rounded-[5px] h-[300px] w-full object-cover mb-4`}
+            className={`rounded-t-[5px] h-[300px] w-full object-cover mb-4`}
           />
             <div className={`absolute bg-[rgba(255,255,255,0.2)] rounded-[8px] py-[6px] px-[10px] flex justify-center items-center text-center right-[20px] top-[20px]`}><p className={`text-[#fff] font-[600] text-[10px] tracking-[2px] uppercase`}>{posts.categories}</p></div>
             <div className={`p-4`}>

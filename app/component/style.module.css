@@ -1,7 +1,11 @@
+.backgroundImg {
+     background-image: url("/Image.svg");
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
 .articleBackground {
      background-image: url("/Image (2).svg");
      background-size: cover;
      background-repeat: no-repeat;
-     /* height: 400px; */
-
 }

@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import Link  from 'next/link';
 import Image from 'next/image';
-import style from "../style.module.css";
-import { useRouter } from 'next/navigation';
+import style from "./style.module.css";
+// import { useRouter } from 'next/navigation';
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -41,13 +41,13 @@ const Navigation = () => {
               <Link href="/" className={`border-b border-[#d4a373] pb-1`}>home</Link>
             </li>
             <li>
-              <Link href="/about" className={`border-b border-[#d4a373] pb-1`}>about</Link>
+              <Link href="/about" className={`pb-1`}>about</Link>
             </li>
             <li>
-              <Link href="/categories" className={`border-b border-[#d4a373] pb-1`}>categories</Link>
+              <Link href="/categories" className={`pb-1`}>categories</Link>
             </li>
             <li>
-              <Link href="/contact" className={`border-b border-[#d4a373] pb-1`}>contact us</Link>
+              <Link href="/contact" className={`pb-1`}>contact us</Link>
             </li>
           </ul>
                </div>
