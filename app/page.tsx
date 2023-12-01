@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Popular from './component/popular';
 
-
-const HomePage = () => {
+const Page = () => {
   return (
-  <section className={``}>
-    <div>
-    </div>
-  </section>
+    <section className={``}>
+      <Popular />
+    </section>
   )
 }
 
-export default HomePage;
+export default Page
