@@ -3,7 +3,7 @@ import Popular from './component/popular';
 
 const Page = () => {
   return (
-    <section className={``}>
+    <section className={`bg-[#fbf9fa]`}>
       <Popular />
     </section>
   )
