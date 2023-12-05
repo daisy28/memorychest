@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
-
+import { useEffect, useState } from "react";
+import { BsYoutube, BsHeart, BsHeartFill } from "react-icons/bs";
 const Popular = () => {
-
+  const [like, setLike] = useState<string[]>([]);
   const blogPosts = [
     {
       id: 0,
@@ -9,7 +11,9 @@ const Popular = () => {
       timeStamp: "",
       img: "/Blog Image.svg",
       title: "Dream about destinations to visit this holiday? Taj Mahal is the perfect place!",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet."
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet.",
+      like: false,
+      videoUrl: `https://www.youtube.com/@memorychesty`
     },
     {
       id: 1,
@@ -17,7 +21,9 @@ const Popular = () => {
       timeStamp: "",
       img: "/Blog Image (1).svg",
       title: "Breathtaking first-person photos around Egypt",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet."
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet.",
+      like: false,
+      videoUrl: "https://www.youtube.com/@memorychesty"
     },
     {
       id: 2,
@@ -25,7 +31,9 @@ const Popular = () => {
       timeStamp: "",
       img: "/Blog Image (2).svg",
       title: "What researchers need to know about the last Pharaoh of Egypt",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet."
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet.",
+      like: false,
+      videoUrl: "https://www.youtube.com/@memorychesty"
     },
     {
       id: 3,
@@ -33,15 +41,20 @@ const Popular = () => {
       timeStamp: "",
       img: "/Blog Image (3).svg",
       title: "What led to the death of the last Pharaoh of Egypt",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet."
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet.",
+      like: false,
+      videoUrl: "https://www.youtube.com/@memorychesty"
     },
+    
     {
       id: 4,
       categories: "events",
       timeStamp: "",
       img: "/Image.svg",
       title: "10 Historical events that shaped the world",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet."
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet.",
+      like: false,
+      videoUrl: "https://www.youtube.com/@memorychesty"
     },
     {
       id: 5,
@@ -49,7 +62,9 @@ const Popular = () => {
       timeStamp: "",
       img: "/Image (2).svg",
       title: "The most deadliest Wars in World History",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet."
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, numquam! Vel officia, dolorum possimus nihil a autem, et obcaecati, asperiores accusantium alias vero dolor earum rerum magnam voluptas necessitatibus amet.",
+      like: false,
+      videoUrl: "https://www.youtube.com/@memorychesty"
     }
   ];
 
@@ -57,13 +72,13 @@ const Popular = () => {
     <div className={`my-8 p-4 md:px-[4rem]`}>
       <div className={`mb-4`}>
         <h1 className={`text-[#495057] text-[30px] font-[600] leading-[28px] tracking-[2px] mb-6 capitalize md:mb-[2rem] text-center md:text-left`}>popular topics</h1>
-        <aside className={`my-4 grid grid-cols-3 gap-x-4 md:grid-cols-6`}>
-          <button className={`text-[#d4a373] text-[14px] font-[600] leading-[25px] text-center md:text-left capitalize`}>all</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center md:text-left capitalize`}>places</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center md:text-left capitalize`}>events</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center md:text-left capitalize`}>people</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center md:text-left capitalize`}>wars</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center md:text-left capitalize`}>cultures</button>
+        <aside className={`my-4 grid grid-cols-3 gap-4 md:grid-cols-6 `}>
+          <button className={`text-[#d4a373] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#d4a373] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>all</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>places</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>events</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>people</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>wars</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>cultures</button>
         </aside>
       </div>
       <section className={`grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 my-8`}>
@@ -81,7 +96,26 @@ const Popular = () => {
               <p className={`text-[#6c757d] font-[400] text-[14px] leading-[28px]`}>{new Date().toDateString()}</p>
           <div className={`my-4`}>
               <h2 className={`text-[#495057] text-[18px] font-[600] leading-[32px] tracking-[.9px] mb-4`}>{posts.title}</h2>
-              <p className={`text-[#6c757d] text-[14px] leading-[28px]`}>{posts.description}</p>
+                <p className={`text-[#6c757d] text-[14px] leading-[28px]`}>{posts.description}</p>
+                <div className={`flex justify-between items-center mt-4`}>
+                  <a href={posts.videoUrl} className={`w-[20px] h-[16px]`} target="_blank">
+                    <BsYoutube className={`text-red-700`} />
+                    <p className={`opacity-0 -z-10`}>{posts.videoUrl}</p>
+                  </a>
+
+                  <button id={`${posts.id}`} className={` h-[16px]`} onClick={() => {
+                    like.includes(`${posts.id}`) ? setLike(like.filter(id => id !== `${posts.id}`)) : setLike([...like, `${posts.id}`])
+                  }}>
+                    {like.includes(`${posts.id}`) ? <BsHeartFill
+                      className={`text-red-700`}
+                      id={`${posts.id}`}
+                    /> :
+                      <BsHeart
+                        id={`${posts.id}`}
+                      />}
+                    <p className={`opacity-0`}>like</p>
+                  </button>
+                </div>
           </div>
             </div>
           

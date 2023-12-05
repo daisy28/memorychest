@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className={`bg-[#212529]`}>
+    <footer className={`bg-[#212529] relative top-[92.5px]`}>
       <div className={`p-4 py-8 md:px-[4rem] flex flex-col gap-[2rem] md:flex-row md:justify-between md:items-start`}>
         <div className={`flex gap-4 justify-center flex-col md:justify-start `}>
           <h1 className={`text-[#fff] text-[18px] font-[600] tracking-[2px] leading-[28px] capitalize`}>Contact the publisher</h1>
@@ -13,12 +13,12 @@ const Footer = () => {
         </div>
         <div className={`flex gap-4 justify-center flex-col md:justify-start`}>
           <h1 className={`text-[#fff] text-[18px] font-[600] tracking-[2px] leading-[28px] capitalize`}>Explore</h1>
-          <Link href="/about" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize`}>about</Link>
-          <Link href="/contact" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize`}>contact</Link>
-          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize`}>partners</Link>
-          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize`}>advertise</Link>
-          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize`}>privacy policy</Link>
-          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize`}>terms and conditions</Link>
+          <Link href="/about" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>about</Link>
+          <Link href="/contact" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>contact</Link>
+          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>partners</Link>
+          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>advertise</Link>
+          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>privacy policy</Link>
+          <Link href="" className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] capitalize hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>terms and conditions</Link>
           
         </div>
         <div className={`flex gap-4 justify-center flex-col md:justify-start`}>

@@ -35,7 +35,7 @@ const Navigation = () => {
                <div className={`flex justify-end text-right`}>
           <ul className={`my-4 md:my-0 flex flex-col  md:flex-row gap-6 text-[#fff] text-[12px] font-[500] capitalize `}>
             <li>
-              <Link href="/" className={`border-b border-[#d4a373] pb-1 hover:text-[#d4a373] hover:border-b hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>home</Link>
+              <Link href="/" className={`text-[#d4a373] border-b border-[#d4a373] pb-1 hover:text-[#d4a373] hover:border-b hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>home</Link>
             </li>
             <li>
               <Link href="/about" className={`pb-1 hover:text-[#d4a373] hover:border-b hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>about</Link>
