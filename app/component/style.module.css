@@ -9,3 +9,8 @@
      background-size: cover;
      background-repeat: no-repeat;
 }
+
+.toggle_btn:hover div {
+     background-color: #d4a373;
+     transition: all .3s ease-in-out;
+}
