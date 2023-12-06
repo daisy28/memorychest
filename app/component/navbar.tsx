@@ -12,7 +12,7 @@ const Navigation = () => {
   return (
     <div className={`${style.nav_backgroundImg} fixed top-0 left-0 right-0 z-[10] shadow-md border-b border-gray-600`}>
      <nav className={`bg-[rgba(0,0,0,0.85)] p-4 py-8 flex justify-between items-center md:flex-row md:px-[4rem]  ${toggle ? `flex-col transition-all delay-200 duration-1000` : `flex-row transition-all delay-200 duration-1000`}`}>
-             <div className={`flex justify-between items-center w-full md:w-[340px]`}>
+             <div className={`flex justify-between items-center w-full md:w-[350px]`}>
           <div>
             <Logo />
                </div>

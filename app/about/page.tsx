@@ -1,13 +1,28 @@
+import Image from 'next/image';
 import React from 'react';
 
 const About = () => {
   return (
-    <section className={`relative top-[96px] p-4 py-10 md:px-[4rem]`}>
+    <section className={`relative top-[96px] p-4 py-[5rem] md:px-[4rem]`}>
       <div className={``}>
-        <h1 className={`font-[Lora] text-[20px] font-[600] text-[#495057] uppercase tracking-[3px] leading-[42px] mb-2`}>About us</h1>
-        <p className={`text-[16px] font-[600] text-[#495057] capitalize tracking-[3px] leading-[32px] mb-4`}>Welcome to memory chest</p>
+        <h1 className={`font-[Lora] text-[20px] font-[600] text-[#495057] uppercase tracking-[3px] leading-[42px] mb-8 text-center`}>About us</h1>
+        <div className={`flex flex-col md:flex-row md:items-center md:justify-between`}>
+          <div className={`md:w-[50%]`}>
+            <h3 className={`text-[16px] font-[600] text-[#495057] capitalize tracking-[3px] leading-[32px] mb-4`}>Welcome to memory chest</h3>
         <p className={`text-[#495057] text-[14px] leading-[28px] font-[400] mb-4 md:text-[1.1rem]`}>We are dedicated to unlocking the secrets of the past, bringing historical events and documentaries to life.</p>
           <p className={`text-[#495057] text-[14px] leading-[28px] font-[400] mb-8 md:text-[1.1rem]`}>Our mission is to preserve and share the memories of the world, fueling curiosity and inspiring a deeper undersatanding of our shared history.</p>
+          </div>
+          <div>
+            <Image
+              src="/About2.jpg"
+              alt="About us image"
+              className={`w-full h-full object-cover relative z-[5]`}
+              width={200}
+              height={200}
+            />
+          </div>
+        </div>
+        
         <article className={`my-8 relative`}>
           <div className={`relative w-[270px]`}>
             <div
