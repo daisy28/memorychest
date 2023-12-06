@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <div className={`relative cursor-pointer`}>
       <div
-        className={`absolute w-[77px] h-[96.5px] left-[39.5px] top-[-32px] bg-[#d4a373] z-[2]`}
+        className={`absolute w-[77px] h-[96.5px] left-[40.5px] top-[-32px] bg-[#d4a373] z-[2]`}
       ></div>
       <Link
         href="/"
