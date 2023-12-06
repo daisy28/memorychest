@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react';
 import Link  from 'next/link';
-import Image from 'next/image';
 import style from "./style.module.css";
 import Logo from './logo';
 import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
@@ -28,7 +27,7 @@ const Navigation = () => {
              </div>
              <div className={`ml-auto md:flex flex-col md:flex-row md:justify-end md:items-center w-[100%] gap-[2rem] ${toggle ? `flex transition-all delay-200 duration-1000` : `hidden transition-all delay-200 duration-1000`}`}>
                <div className={`flex justify-end text-right`}>
-          <ul className={`my-4 md:my-0 flex flex-col  md:flex-row gap-6 text-[#fff] text-[12px] font-[500] capitalize `}>
+          <ul className={`my-4 md:my-0 flex flex-col  md:flex-row gap-8 text-[#fff] text-[12px] font-[500] capitalize `}>
             <li>
               <Link href="/" className={`text-[#d4a373] border-b border-[#d4a373] pb-1 hover:text-[#d4a373] hover:border-b hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>home</Link>
             </li>

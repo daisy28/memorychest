@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsYoutube, BsHeart, BsHeartFill } from "react-icons/bs";
 const Popular = () => {
   const [like, setLike] = useState<string[]>([]);
@@ -71,14 +71,14 @@ const Popular = () => {
   return (
     <div className={`my-8 p-4 md:px-[4rem]`}>
       <div className={`mb-4`}>
-        <h1 className={`text-[#495057] text-[30px] font-[600] leading-[28px] tracking-[2px] mb-6 capitalize md:mb-[2rem] text-center md:text-left`}>popular topics</h1>
+        <h1 className={`text-[#495057] text-[30px] font-[600] leading-[28px] tracking-[2px] mb-6 capitalize md:mb-[2rem] text-center md:text-left font-[Lora]`}>popular topics</h1>
         <aside className={`my-4 grid grid-cols-3 gap-4 md:grid-cols-6 `}>
-          <button className={`text-[#d4a373] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#d4a373] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>all</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>places</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>events</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>people</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>wars</button>
-          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>cultures</button>
+          <button className={`text-[#d4a373] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#d4a373] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300 font-[Lora]`}>all</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300 font-[Lora]`}>places</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300 font-[Lora]`}>events</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center font-[Lora] capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`}>people</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300 font-[Lora]`}>wars</button>
+          <button className={`text-[#495057] text-[14px] font-[600] leading-[25px] text-center  capitalize border border-[#495057] rounded-[4px] hover:text-[#d4a373]  hover:border-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300 font-[Lora]`}>cultures</button>
         </aside>
       </div>
       <section className={`grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 my-8`}>
@@ -95,7 +95,7 @@ const Popular = () => {
             <div className={`p-4`}>
               <p className={`text-[#6c757d] font-[400] text-[14px] leading-[28px]`}>{new Date().toDateString()}</p>
           <div className={`my-4`}>
-              <h2 className={`text-[#495057] text-[18px] font-[600] leading-[32px] tracking-[.9px] mb-4`}>{posts.title}</h2>
+              <h2 className={`text-[#495057] text-[18px] font-[600] leading-[32px] tracking-[.9px] mb-4 font-[Lora]`}>{posts.title}</h2>
                 <p className={`text-[#6c757d] text-[14px] leading-[28px]`}>{posts.description}</p>
                 <div className={`flex justify-between items-center mt-4`}>
                   <a href={posts.videoUrl} className={`w-[20px] h-[16px]`} target="_blank">
