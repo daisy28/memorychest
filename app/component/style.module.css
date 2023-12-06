@@ -4,6 +4,13 @@
      background-repeat: no-repeat;
 }
 
+.nav_backgroundImg {
+     background-image: url("/glass1.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
 .articleBackground {
      background-image: url("/Image (2).svg");
      background-size: cover;

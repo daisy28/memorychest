@@ -112,6 +112,7 @@ const Popular = () => {
                     /> :
                       <BsHeart
                         id={`${posts.id}`}
+                        className={`text-red-700 font-[600]`}
                       />}
                     <p className={`opacity-0`}>like</p>
                   </button>

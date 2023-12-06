@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
+import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -25,28 +26,13 @@ const Footer = () => {
           <h1 className={`text-[#fff] text-[18px] font-[600] tracking-[2px] leading-[28px] capitalize`}>Connections</h1>
           <div className={`flex gap-4 items-center`}>
             <Link href="https://www.facebook.com/nollymovie">
-                   <Image
-                     src="/facebook.svg"
-                     width={20}
-                     height={20}
-                     alt="Facebook link icon"
-                   />
+                   <BsFacebook className={`text-[#fff] hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`} />
                  </Link>
                  <Link href="https://www.youtube.com/@memorychesty">
-                   <Image
-                     src="/youtube.svg"
-                     width={20}
-                     height={20}
-                     alt="Youtube link icon"
-                   />
+                   <BsYoutube className={`text-[#fff] hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`} />
                  </Link>
                  <Link href="https://www.twitter.com/memorychesty">
-                   <Image
-                     src="/twitter.svg"
-                     width={20}
-                     height={20}
-                     alt="Twitter link icon"
-                   />
+                   <BsTwitter className={`text-[#fff] hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`} />
                  </Link>
           </div>
         </div>

@@ -3,24 +3,19 @@ import React, { useState } from 'react';
 import Link  from 'next/link';
 import Image from 'next/image';
 import style from "./style.module.css";
+import Logo from './logo';
+import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 // import { useRouter } from 'next/navigation';
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className={`${style.backgroundImg} fixed top-0 left-0 right-0 z-[10] shadow-md border-b border-gray-600`}>
-     <nav className={`bg-[rgba(0,0,0,0.2)] p-4 flex justify-between items-center md:flex-row md:px-[4rem]  ${toggle ? `flex-col transition-all delay-200 duration-1000` : `flex-row transition-all delay-200 duration-1000`}`}>
-             <div className={`flex justify-between items-center w-full md:w-[20%]`}>
-               <div>
-                 <Link href="/">
-                   <Image src="/IMG-20230830-WA0026.jpg"
-                     width={200}
-                     height={200}
-                     alt="Memory Chest logo"
-                     className={`w-[60px] h-[60px] rounded-full object-cover`}
-                   />
-                 </Link>
+    <div className={`${style.nav_backgroundImg} fixed top-0 left-0 right-0 z-[10] shadow-md border-b border-gray-600`}>
+     <nav className={`bg-[rgba(0,0,0,0.85)] p-4 py-8 flex justify-between items-center md:flex-row md:px-[4rem]  ${toggle ? `flex-col transition-all delay-200 duration-1000` : `flex-row transition-all delay-200 duration-1000`}`}>
+             <div className={`flex justify-between items-center w-full md:w-[340px]`}>
+          <div>
+            <Logo />
                </div>
           <div>
             <button className={`${style.toggle_btn} flex flex-col w-[18px] h-[14px] justify-between cursor-pointer md:hidden`} onClick={() => setToggle(prevState => !prevState)}>
@@ -50,28 +45,13 @@ const Navigation = () => {
                </div>
                <div className={`md:flex gap-4 items-center justify-end ${toggle ? `flex` : `hidden`}`}>
                  <Link href="https://www.facebook.com/nollymovie">
-                   <Image
-                     src="/facebook.svg"
-                     width={20}
-                     height={20}
-                     alt="Facebook link icon"
-                   />
+                   <BsFacebook className={`text-[#fff] hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`} />
                  </Link>
                  <Link href="https://www.youtube.com/@memorychesty">
-                   <Image
-                     src="/youtube.svg"
-                     width={20}
-                     height={20}
-                     alt="Youtube link icon"
-                   />
+                   <BsYoutube className={`text-[#fff] hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`} />
                  </Link>
                  <Link href="https://www.twitter.com/memorychesty">
-                   <Image
-                     src="/twitter.svg"
-                     width={20}
-                     height={20}
-                     alt="Twitter link icon"
-                   />
+                   <BsTwitter className={`text-[#fff] hover:text-[#d4a373] hover:transition-all hover:delay-300 hover:duration-300`} />
                  </Link>
                </div>
              </div>
