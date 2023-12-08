@@ -22,6 +22,7 @@
      transition: all .3s ease-in-out;
 }
 
-/* svg:hover {
-     color-scheme: #d4a373;
+/* .contact_page {
+     overflow-x: hidden !important;
+     overflow-y: auto;
 } */

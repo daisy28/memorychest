@@ -2,36 +2,38 @@ import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 import { BsFacebook, BsYoutube, BsTwitter, BsTiktok } from "react-icons/bs";
+import style from "../component/style.module.css";
+
 
 const Contact = () => {
   return (
-    <section className={`relative top-[96px] p-4 py-[5rem] md:px-[4rem] mb-[7rem]`}>
-      <div className={`absolute top-[-25%] right-[-33.33%]`}>
+    <section className={`${style.contact_page} relative top-[96px] p-4 py-[5rem] md:px-[4rem] mb-[6rem]`}>
+      {/* <div className={` absolute rotate-[130deg] top-[-80px] right-[-80px]`}>
         <Image
         src="/cloud-s-yellow.svg"
           alt=""
           width={200}
           height={200}
-          className={` rotate-[-180deg] w-[790px] h-[630px] opacity-[.3] blur-[40px] bg-blend-normal`}
+          className={`w-[200px] h-[200px] `}
         />
-      </div>
-      <div className={`absolute bottom-[-25%] left-[-33.33%]`}>
+      </div> */}
+      <div className={`absolute rotate-[130deg] bottom-[-260px] left-[-160px]`}>
         <Image
         src="/cloud-s-orange.svg"
           alt=""
           width={200}
           height={200}
-          className={` rotate-[-180deg] z-[-7] w-[790px] h-[630px] opacity-[.25] blur-[40px] bg-blend-normal `}
+          className={`opacity-[.4] blur-[90px] bg-blend-normal rotate-[-180deg] z-[-7] w-[400px] h-[400px]  `}
         />
       </div>
-      <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-4 lg:gap-10 mb-[3rem]`}>
+      <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-4 lg:gap-10 mb-[3rem] `}>
         <div className={`md:w-[50%]`}>
           <h1 className={`font-[Lora] text-[20px] font-[600] text-[#495057] uppercase tracking-[3px] leading-[42px] mb-8 text-center md:text-left`}>Contact Memory chest </h1>
           <p className={`text-[#495057] text-[14px] leading-[28px] font-[400] mb-4 md:text-[1.1rem]`}>Welcome to Memory Chest, where we are passionate about unlocking the secrets of the past and bringing historical events and documentaries to life. Your curiosity is our inspiration, and your engagements fuels our mission to preserve and share the memories of the world.</p>
         </div>
         <div className={`md:w-[50%]`}>
           <Image
-              src="/images (9).jpeg"
+              src="/images__13_-removebg-preview.png"
               alt="About us image"
               className={`w-full h-[250px] object-cover relative z-[5] rounded-[4px]`}
               width={200}
@@ -39,7 +41,7 @@ const Contact = () => {
             />
         </div>
       </div>
-      <div className={`relative flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-[4rem] mb-[3rem]`}>
+      <div className={`relative flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-[4rem] mb-[3rem] `}>
         <div className={`md:w-[50%]`}>
           <h1 className={`font-[Lora] text-[20px] font-[600] text-[#495057] uppercase tracking-[3px] leading-[42px] mb-8 text-center md:text-left`}>Get in touch </h1>
           <p className={`text-[#495057] text-[14px] leading-[28px] font-[400] mb-4 md:text-[1.1rem]`}>Have questions, suggestions, or just want to share your thoughts with us? We&apos;d love to hear from you! Feel free to reach out via email at <a href="mailto:memorychest90@gmail.com" className={`underline text-[#d4a373]`} >memorychest90@gmail.com</a></p>
