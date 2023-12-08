@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
+import AboutImg from "../../public/images (12).jpeg";
+import SiteImg from "../../public/images (2).jpeg";
+import ExpectImg from "../../public/images (3).jpeg";
+import SubscribeImg from "../../public/images (8).jpeg";
 
 const About = () => {
   return (
@@ -14,7 +18,7 @@ const About = () => {
           </div>
           <div className={`md:w-[50%]`}>
             <Image
-              src="/images (12).jpeg"
+              src={AboutImg}
               alt="About us image"
               className={`w-full h-[250px] object-cover relative z-[5] rounded-[4px]`}
               width={200}
@@ -35,8 +39,8 @@ const About = () => {
           </div>
           <div className={`md:order-[-1] md:w-[50%]`}>
             <Image
-              src="/images (2).jpeg"
-              alt="About us image"
+              src={SiteImg}
+              alt="Who the site is for image"
               className={`w-full h-[250px] object-cover relative z-[5] rounded-[4px]`}
               width={200}
               height={200}
@@ -56,8 +60,8 @@ const About = () => {
           </div>
           <div className={`md:w-[50%]`}>
             <Image
-              src="/images (3).jpeg"
-              alt="About us image"
+              src={ExpectImg}
+              alt="What to expect image"
               className={`w-full h-[250px] object-cover relative z-[5] rounded-[4px]`}
               width={200}
               height={200}
@@ -96,8 +100,8 @@ const About = () => {
           </div>
           <div className={`md:w-[50%]`}>
             <Image
-              src="/images (8).jpeg"
-              alt="About us image"
+              src={SubscribeImg}
+              alt="Subscribe to newsletter image"
               className={`w-full h-[250px] object-cover relative z-[5] rounded-[4px]`}
               width={200}
               height={200}
