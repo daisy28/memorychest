@@ -23,6 +23,7 @@ const Contact = () => {
           alt=""
           width={200}
           height={200}
+          unoptimized
           className={`opacity-[.4] blur-[90px] bg-blend-normal rotate-[-180deg] z-[-7] w-[400px] h-[400px]  `}
         />
       </div>
@@ -38,6 +39,7 @@ const Contact = () => {
               className={`w-full h-[250px] object-cover relative z-[5] rounded-[4px]`}
               width={200}
               height={200}
+              unoptimized
             />
         </div>
       </div>
@@ -55,6 +57,7 @@ const Contact = () => {
               className={`object-cover w-full h-full  rounded-full ml-auto`}
               width={200}
               height={200}
+              unoptimized
             />
         </div>
         <div className={`absolute top-[130px] z-[5] p-4 rounded-full bg-[#d4a373] w-[300px] h-[300px] flex justify-center items-center left-[-45px] opacity-[.9] `}>

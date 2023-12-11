@@ -88,6 +88,7 @@ const Popular = () => {
             src={posts.img}
             width={20}
             height={20}
+            unoptimized
             alt="random picture"
             className={`rounded-t-[5px] h-[300px] w-full object-cover mb-4`}
           />
