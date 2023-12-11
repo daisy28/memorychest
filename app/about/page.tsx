@@ -104,7 +104,7 @@ const About = () => {
           </div>
           <div className={`md:w-[50%]`}>
             <Image
-              src="/images (2).jpeg"
+              src="/images (8).jpeg"
               alt="Subscribe to newsletter image"
               className={`w-full h-[250px] object-cover relative z-[5] rounded-[4px]`}
               width={200}
