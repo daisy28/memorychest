@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={`flex gap-4 justify-center flex-col md:justify-start `}>
           <h1 className={`text-[#fff] text-[18px] font-[600] tracking-[2px] leading-[28px] capitalize font-[Lora]`}>Contact the publisher</h1>
           <p className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px] `}>ubahgloria16@gmail.com</p>
-          <p className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px]`}>+2349026115866</p>
+          {/* <p className={`text-[#e5e5e5] text-[14px] font-[400] leading-[24px]`}>+2349026115866</p> */}
         </div>
         <div className={`flex gap-4 justify-center flex-col md:justify-start`}>
           <h1 className={`text-[#fff] text-[18px] font-[600] tracking-[2px] leading-[28px] capitalize font-[Lora]`}>Explore</h1>
