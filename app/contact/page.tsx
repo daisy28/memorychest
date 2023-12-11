@@ -65,7 +65,7 @@ const Contact = () => {
             <input type="text" name="" id="" placeholder="First Name" className={`bg-[#fff] rounded-[4px] outline-none border-0 px-4 py-2 w-[80%] mx-auto`} />
             <input type="email" name="" id="" placeholder="example@gmail.com" className={`bg-[#fff] rounded-[4px] outline-none border-0 px-4 py-2 w-[80%] mx-auto`} />
             <textarea name="" id="" cols={20} rows={2} placeholder="Enter your message" className={`${style.text_area} bg-[#fff] rounded-[4px] outline-none border-0 px-4 py-2 w-[80%] height-[64px]  mx-auto`} ></textarea>
-            <button className={` bg-[#212529] rounded-[4px] w-[80%] mx-auto p-2 px-4 text-[#e5e5e5] font-[600] outline-none hover:bg-[#d4a373] hover:text-[#495057] hover:transition-all hover:delay-300 hover:duration-300 shadow-md`}>Send</button>
+            <button className={` bg-[#212529] rounded-[4px] w-[80%] mx-auto p-2 px-4 text-[#e5e5e5] font-[600] outline-none hover:bg-[#fff] hover:text-[#495057] hover:transition-all hover:delay-300 hover:duration-300 shadow-md`}>Send</button>
           </form>
           </div>
           <div className={`absolute w-[135px] h-[135px] rounded-full flex flex-col justify-center items-center bg-[#212529] opacity-[.9] z-[6] top-[30px] left-[-48px]`}>
