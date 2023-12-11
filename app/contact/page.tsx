@@ -7,7 +7,7 @@ import style from "../component/style.module.css";
 
 const Contact = () => {
   return (
-    <section className={`${style.contact_page} relative top-[96px] p-4 py-[5rem] md:px-[4rem] mb-[6rem]`}>
+    <section className={`${style.contact_page} relative top-[96px] p-4 py-[5rem] md:px-[4rem] mb-[6rem] h-[100%]`}>
       {/* <div className={` absolute rotate-[130deg] top-[-80px] right-[-80px]`}>
         <Image
         src="/cloud-s-yellow.svg"
@@ -43,7 +43,7 @@ const Contact = () => {
             />
         </div>
       </div>
-      <div className={`relative flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-[4rem] mb-[3rem] `}>
+      <div className={`relative flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-[4rem] mb-[3rem]`}>
         <div className={`md:w-[50%]`}>
           <h1 className={`font-[Lora] text-[20px] font-[600] text-[#495057] uppercase tracking-[3px] leading-[42px] mb-8 text-center md:text-left`}>Get in touch </h1>
           <p className={`text-[#495057] text-[14px] leading-[28px] font-[400] mb-4 md:text-[1.1rem]`}>Have questions, suggestions, or just want to share your thoughts with us? We&apos;d love to hear from you! Feel free to reach out via email at <a href="mailto:memorychest90@gmail.com" className={`underline text-[#d4a373]`} >memorychest90@gmail.com</a></p>
@@ -64,7 +64,7 @@ const Contact = () => {
           <form action="" className={`flex gap-2 flex-col`}>
             <input type="text" name="" id="" placeholder="First Name" className={`bg-[#fff] rounded-[4px] outline-none border-0 px-4 py-2 w-[80%] mx-auto`} />
             <input type="email" name="" id="" placeholder="example@gmail.com" className={`bg-[#fff] rounded-[4px] outline-none border-0 px-4 py-2 w-[80%] mx-auto`} />
-            <textarea name="" id="" cols={20} rows={2} placeholder="Enter your message" className={`bg-[#fff] rounded-[4px] outline-none border-0 px-4 py-2 w-[80%] mx-auto`}></textarea>
+            <textarea name="" id="" cols={20} rows={2} placeholder="Enter your message" className={`${style.text_area} bg-[#fff] rounded-[4px] outline-none border-0 px-4 py-2 w-[80%] height-[64px]  mx-auto`} ></textarea>
             <button className={` bg-[#212529] rounded-[4px] w-[80%] mx-auto p-2 px-4 text-[#e5e5e5] font-[600] outline-none hover:bg-[#d4a373] hover:text-[#495057] hover:transition-all hover:delay-300 hover:duration-300 shadow-md`}>Send</button>
           </form>
           </div>

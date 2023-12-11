@@ -5,7 +5,7 @@ import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className={`bg-[#212529] relative top-[92.5px]`}>
+    <footer className={`bg-[#212529] relative top-[92.5px] bottom-0`}>
       <div className={`p-4 py-10 md:px-[4rem] flex flex-col gap-[2rem] md:flex-row md:justify-between md:items-start`}>
         <div className={`flex gap-4 justify-center flex-col md:justify-start `}>
           <h1 className={`text-[#fff] text-[18px] font-[600] tracking-[2px] leading-[28px] capitalize font-[Lora]`}>Contact the publisher</h1>

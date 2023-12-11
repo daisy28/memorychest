@@ -22,7 +22,6 @@
      transition: all .3s ease-in-out;
 }
 
-/* .contact_page {
-     overflow-x: hidden !important;
-     overflow-y: auto;
-} */
+.text_area {
+     resize: none;
+}
