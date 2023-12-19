@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { BsYoutube, BsHeart, BsHeartFill } from "react-icons/bs";
+
 const Popular = () => {
   const [like, setLike] = useState<string[]>([]);
   const blogPosts = [

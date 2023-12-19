@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './component/header';
-import Popular from './component/popular';
-import Recent from './component/recent';
+import Header from '../component/header';
+import Popular from '../component/popular';
+import Recent from '../component/recent';
 
 const Page = () => {
   return (
