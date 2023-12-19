@@ -1,9 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-// import AboutImg from "../../public/images (12).jpeg";
-// import SiteImg from "../../public/images (2).jpeg";
-// import ExpectImg from "../../public/images (3).jpeg";
-// import SubscribeImg from "../../public/images (8).jpeg";
 
 const About = () => {
   return (
