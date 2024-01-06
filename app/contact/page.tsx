@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 import { BsFacebook, BsYoutube, BsTwitter, BsTiktok } from "react-icons/bs";
-import style from "../../component/style.module.css";
+import style from "../../components/style.module.css";
 
 const Contact = () => {
   return (

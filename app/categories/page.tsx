@@ -1,5 +1,5 @@
 import React from 'react';
-import Popular from '../../component/popular';
+import Popular from '../../components/popular';
 
 const Categories = () => {
   return (
